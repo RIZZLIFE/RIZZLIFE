@@ -8,18 +8,20 @@
   
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
-    body {
+    html, body {
+      height: 100%;
       font-family: 'Impact', 'Arial Black', sans-serif;
       color: #fff;
       text-align: center;
-      min-height: 100vh;
-      background: url('https://github.com/RIZZLIFE/RIZZLIFE/blob/main/Screenshot_20251206_120923_Chrome.jpg?raw=true') center/cover no-repeat fixed;
-      padding: 20px;
     }
-    .logo { max-width:90%; width:420px; margin:30px auto 20px; filter:drop-shadow(0 0 20px #000); }
-    h1 { font-size:4.5rem; letter-spacing:8px; text-transform:uppercase; color:#ffde59;
-         text-shadow:0 0 10px #000,4px 4px 0 #000; margin-bottom:10px; }
-    h2 { font-size:2.2rem; color:#ffde59; text-shadow:3px 3px 0 #000; margin-bottom:30px; }
+    body {
+      {background: #000 url('https://github.com/RIZZLIFE/RIZZLIFE/blob/main/Screenshot_20251206_120923_Chrome.jpg?raw=true') center center / cover no-repeat fixed;
+      padding: 20px 15px;
+    }
+    .logo        {max-width:90%; width:420px; margin:30px auto 20px; filter:drop-shadow(0 0 20px #000);}
+    h1           {font-size:4.5rem; letter-spacing:8px; text-transform:uppercase; color:#ffde59;
+                  text-shadow:0 0 10px #000,4px 4px 0 #000; margin-bottom:10px;}
+    h2           {font-size:2.2rem; color:#ffde59; text-shadow:3px 3px 0 #000; margin-bottom:30px;}
 
     .box {
       background: rgba(0,0,0,0.85);
@@ -43,7 +45,7 @@
       padding:18px 40px; margin:15px; border-radius:50px; text-decoration:none;
       box-shadow:0 8px 0 #b39700; transition:all .2s;
     }
-    .btn:active { transform:translateY(4px); box-shadow:0 4px 0 #b39700; }
+    .btn:active  {transform:translateY(4px); box-shadow:0 4px 0 #b39700;}
 
     .copy-btn {
       background:#ffde59; color:#000; border:none; padding:10px 24px;
@@ -60,6 +62,7 @@
       h2 {font-size:1.8rem;}
       .box {font-size:1.4rem; padding:20px 30px;}
       .btn {font-size:1.5rem; padding:16px 30px;}
+      body {background-attachment:scroll;} /* makes it smoother on phones */
     }
   </style>
 </head>
