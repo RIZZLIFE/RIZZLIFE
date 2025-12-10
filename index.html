@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RIZZ LIFE • DEGEN CLUBHOUSE</title>
+  <meta name="description" content="A clubhouse for degens. Fun memecoin turning legendary." />
+  
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      background: url('https://github.com/RIZZLIFE/RIZZLIFE/blob/main/Screenshot_20251206_120923_Chrome.jpg?raw=true') center/cover no-repeat fixed;
+      padding: 20px;
+    }
+    .logo {
+      max-width: 90%;
+      width: 420px;
+      margin: 30px auto 20px;
+      filter: drop-shadow(0 0 20px #000);
+    }
+    h1 {
+      font-size: 4.5rem;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      color: #ffde59;
+      text-shadow: 0 0 10px #000, 4px 4px 0 #000;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 2.2rem;
+      color: #ffde59;
+      text-shadow: 3px 3px 0 #000;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1.4rem;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      text-shadow: 2px 2px 6px #000;
+      line-height: 1.5;
+    }
+    .ca {
+      background: rgba(0,0,0,0.7);
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 20px auto;
+      word-break: break-all;
+      text-shadow: none;
+      position: relative;
+    }
+    .btn {
+      display: inline-block;
+      background: #ffde59;
+      color: #000;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 18px 40px;
+      margin: 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 0 #b39700;
+      transition: all 0.2s;
+    }
+    .btn:active {
+      transform: translateY(4px);
+      box-shadow: 0 4px 0 #b39700;
+    }
+    .soon {
+      color: #ffde59;
+      font-style: italic;
+      margin-top: 60px;
+      font-size: 1.5rem;
+    }
+
+    /* Copy button & toast */
+    .copy-btn {
+      background: #ffde59;
+      color: #000;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 12px;
+      font-size: 1rem;
+    }
+    .copied {
+      position: absolute;
+      top: -55px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #000;
+      color: #ffde59;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.4s;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 3rem; letter-spacing: 4px; }
+      h2 { font-size: 1.8rem; }
+      .btn { font-size: 1.5rem; padding: 16px 30px; }
+      .ca { font-size: 1rem; padding: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://github.com/RIZZLIFE/RIZZLIFE/blob/main/Screenshot_20251206_113410_Chrome.jpg?raw=true" alt="RIZZ LIFE Logo" class="logo">
+
+  <h1>RIZZ LIFE</h1>
+  <h2>DEGEN CLUBHOUSE</h2>
+
+  <p>
+    A clubhouse for crypto traders.<br>
+    Making the preparations for launch 3 - 2 - 1...
+  </p>
+
+  <div class="ca">
+    CA: CxAgVNWBivsCNqzgRuEXT6Hqgw3SGk6kssQQ2E3qpump<br>
+    <button class="copy-btn" onclick="copyCA()">COPY CA</button>
+    <div class="copied" id="copied">COPIED!</div>
+  </div>
+
+  <a href="https://jup.ag/?sell=So11111111111111111111111111111111111111112&buy=CxAgVNWBivsCNqzgRuEXT6Hqgw3SGk6kssQQ2E3qpump" class="btn" target="_blank">
+    BUY ON DEX
+  </a>
+
+  <a href="https://x.com/RIZZ_LIFE" class="btn" target="_blank">
+    FOLLOW ON X
+  </a>
+
+  <div class="soon">
+    COMING SOON<br><br>
+    • Raiding Bots<br>
+    • Farming Tools<br>
+    • Utility NFTs (staking + clubhouse access)
+  </div>
+
+  <script>
+    function copyCA() {
+      navigator.clipboard.writeText("CxAgVNWBivsCNqzgRuEXT6Hqgw3SGk6kssQQ2E3qpump");
+      const toast = document.getElementById("copied");
+      toast.style.opacity = "1";
+      setTimeout(() => toast.style.opacity = "0", 1600);
+    }
+  </script>
+
+</body>
+</html>
